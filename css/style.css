@@ -414,6 +414,7 @@ section {
 .ready-to-start-container {
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 10rem;
 }
@@ -467,5 +468,3 @@ footer {
   align-items: center;
   gap: 3rem;
 }
-
-
