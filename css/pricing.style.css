@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-pink: hsl(337, 48%, 49%);
+  --charm-pink: hsl(337, 60%, 64%);
+  --san-juan-blue: hsl(207, 33%, 32%);
+  --light-san-juan-blue: hsl(207, 16%, 50%);
+  --link-water-white: hsl(220, 60%, 99%);
+  --mirage-blue: hsl(207, 27%, 15%);
+  --color-background: hsl(0, 0%, 95%);
+  --circle-bg: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  font-family: "DM Serif Text", serif;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 15%;
+  top: 0;
+  padding: 3rem 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 0 10rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--san-juan-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.address-box {
+  width: 44rem;
+  height: 4.8rem;
+  background-color: var(--link-water-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.address-box .email {
+  height: 100%;
+  width: 60%;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--san-juan-blue);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+}
+
+.email::placeholder {
+  color: var(--san-juan-blue);
+  opacity: 0.5;
+}
+
+.btn-pink {
+  height: 100%;
+  width: 40%;
+  border-radius: 3rem;
+  background-color: var(--dark-pink);
+  color: var(--link-water-white);
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--link-water-white);
+}
+
+#btn-pink--2 {
+  width: 17.6rem;
+  height: 4.8rem;
+}
+
+main {
+  width: 100%;
+  padding: 20rem 10rem;
+}
+
+.heading-main {
+  font-size: 4.8rem;
+  font-weight: 400;
+  letter-spacing: -0.37px;
+  margin-bottom: 2.4rem;
+}
+
+.heading-main {
+  font-size: 4.8rem;
+  font-weight: 400;
+  letter-spacing: -0.37px;
+  margin-bottom: 2.4rem;
+}
+
+.heading-main-2 {
+  color: var(--san-juan-blue);
+}
+
+.pricing-plan-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 4rem;
+}
+
+.pricing-plan-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.plan-container-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid var(--light-san-juan-blue);
+  padding: 2.4rem 0;
+}
+
+.price {
+  font-size: 5.6rem;
+  letter-spacing: -0.43px;
+  color: var(--san-juan-blue);
+}
+
+.heading-2 {
+  font-size: 3.2rem;
+  color: var(--dark-pink);
+}
+
+.para-main {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.para-main-1 {
+  color: var(--light-san-juan-blue);
+  width: 35rem;
+}
