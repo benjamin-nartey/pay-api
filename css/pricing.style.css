@@ -19,6 +19,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,7 +49,7 @@ nav {
   padding: 0 10rem;
 }
 
-nav::before {
+.container::before {
   content: "";
   position: absolute;
   width: 80rem;
@@ -56,7 +57,7 @@ nav::before {
   background-color: var(--san-juan-blue);
   opacity: 0.2;
   border-radius: 50%;
-  transform: translate(85%, -28%);
+  transform: translate(100%, -70%);
   /* filter: blur(0.1rem); */
 }
 
