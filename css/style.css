@@ -27,6 +27,7 @@ body {
   min-height: 100vh;
   background-color: var(--color-background);
   font-family: "DM Serif Text", serif;
+  font-weight: 400;
   overflow-x: hidden;
 }
 
@@ -224,10 +225,11 @@ section {
   position: absolute;
   width: 80rem;
   height: 80rem;
-  background-color: var(--color-background);
+  background-color: var(--circle-bg);
   opacity: 0.05;
   border-radius: 50%;
-  transform: translate(-53%, -25%);
+  clip: rect(0, 80rem, 40rem, 0);
+  transform: rotate(180deg) translate(58%, 30%);
 }
 
 .heading-main {
@@ -264,6 +266,7 @@ section {
   outline: none;
   border: 2px solid var(--link-water-white);
   background-color: transparent;
+  z-index: 2;
 }
 
 .about-us-section-right {

@@ -14,7 +14,8 @@
   --link-water-white: hsl(220, 60%, 99%);
   --mirage-blue: hsl(207, 27%, 15%);
   --color-background: hsl(0, 0%, 95%);
-  --circle-bg: hsl(0, 0%, 59%);
+  --checkbox-bg: hsl(0, 0%, 85%);
+  --circle-bg: hsl(208, 23%, 86%);
 }
 
 html {
@@ -27,6 +28,7 @@ body {
   min-height: 100vh;
   background-color: var(--color-background);
   font-family: "DM Serif Text", serif;
+  font-weight: 400;
   overflow-x: hidden;
 }
 
