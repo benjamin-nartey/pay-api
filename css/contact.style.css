@@ -74,10 +74,16 @@ nav ul li {
   list-style: none;
 }
 
-nav ul li a {
+
+.link-nav {
   text-decoration: none;
   color: var(--san-juan-blue);
   font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.link-nav:focus,
+.link-nav:hover {
   font-weight: 700;
 }
 
@@ -128,6 +134,16 @@ nav ul li a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--link-water-white);
+  transition: all .35s ease;
+}
+
+
+.btn-pink:hover {
+  background-color: var(--charm-pink);
+}
+
+.btn-pink:active {
+  background-color: var(--dark-pink);
 }
 
 #btn-pink--2 {
@@ -338,11 +354,8 @@ footer {
   list-style: none;
 }
 
-.footer-content-left ul li a {
-  text-decoration: none;
+.link-nav-footer {
   color: var(--link-water-white);
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .footer-content-right {

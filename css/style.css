@@ -88,10 +88,15 @@ nav ul li {
   list-style: none;
 }
 
-nav ul li a {
+.link-nav {
   text-decoration: none;
   color: var(--san-juan-blue);
   font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.link-nav:focus,
+.link-nav:hover {
   font-weight: 700;
 }
 
@@ -152,11 +157,20 @@ nav ul li a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--link-water-white);
+  transition: all 0.35s ease;
 }
 
 #btn-pink--2 {
   width: 17.6rem;
   height: 4.8rem;
+}
+
+.btn-pink:hover {
+  background-color: var(--charm-pink);
+}
+
+.btn-pink:active {
+  background-color: var(--dark-pink);
 }
 
 .question-link {
@@ -267,8 +281,19 @@ section {
   border: 2px solid var(--link-water-white);
   background-color: transparent;
   z-index: 2;
+  cursor: pointer;
+  transition: all 0.35s ease;
 }
 
+.btn-about-us:hover {
+  background-color: var(--link-water-white);
+  color: var(--mirage-blue);
+}
+
+.btn-about-us:active {
+  background-color: transparent;
+  color: var(--link-water-white);
+}
 .about-us-section-right {
   width: 100%;
   display: flex;
@@ -454,11 +479,8 @@ footer {
   list-style: none;
 }
 
-.footer-content-left ul li a {
-  text-decoration: none;
+.link-nav-footer {
   color: var(--link-water-white);
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .footer-content-right {
