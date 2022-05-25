@@ -369,3 +369,11 @@ footer {
   align-items: center;
   gap: 3rem;
 }
+.footer-content-right-content svg{
+  cursor: pointer;
+  transition: all .35s ease;
+}
+
+.footer-content-right-content svg:hover path {
+  fill: var(--dark-pink);
+}

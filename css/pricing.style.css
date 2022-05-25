@@ -125,9 +125,8 @@ nav ul li {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--link-water-white);
-  transition: all .35s ease;
+  transition: all 0.35s ease;
 }
-
 
 .btn-pink:hover {
   background-color: var(--charm-pink);
@@ -224,7 +223,7 @@ main {
   font-weight: 400;
 }
 
-.plan-container-2-row span {
+.plan-text {
   color: var(--light-san-juan-blue);
   opacity: 0.5;
 }
@@ -253,9 +252,6 @@ input[type="checkbox"]:checked {
   font-weight: 700;
 }
 
-/* input[type="checkbox"]:checked .plan-container-2-row span {
-  opacity: 1;
-} */
 input[type="checkbox"]:checked::before {
   content: "\2713";
 }
@@ -328,4 +324,12 @@ footer {
   justify-content: flex-end;
   align-items: center;
   gap: 3rem;
+}
+.footer-content-right-content svg {
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.footer-content-right-content svg:hover path {
+  fill: var(--dark-pink);
 }
