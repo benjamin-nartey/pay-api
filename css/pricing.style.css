@@ -95,6 +95,7 @@ nav ul li {
   align-items: center;
   border-radius: 3rem;
   margin-bottom: 2.4rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .address-box .email {
@@ -265,10 +266,23 @@ input[type="checkbox"]:checked::before {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.12px;
+  background-color: transparent;
   color: var(--san-juan-blue);
   display: block;
   margin-top: 2.4rem;
   margin-bottom: 10rem;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.req-btn:hover {
+  background-color: var(--san-juan-blue);
+  color: var(--link-water-white);
+}
+
+.req-btn:active {
+  background-color: transparent;
+  color: var(--san-juan-blue);
 }
 
 .ready-to-start-container {

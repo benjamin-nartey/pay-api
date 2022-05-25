@@ -12,7 +12,13 @@
       <nav>
         <div class="nav nav-left">
           <ul>
-            <img src="assets/icons/logo.svg" alt="brand-logo" id="brand-logo" />
+            <a class="link-nav" href="/index.html">
+              <img
+                src="assets/icons/logo.svg"
+                alt="brand-logo"
+                id="brand-logo"
+              />
+            </a>
             <li><a class="link-nav" href="/pricing.html">Pricing</a></li>
             <li><a class="link-nav" href="/about.html">About</a></li>
             <li><a class="link-nav" href="/contact.html">Contact</a></li>
@@ -30,38 +36,55 @@
         </h1>
         <section class="contact-form-section">
           <div class="contact-form-section-left">
-            <form action="" method="">
-              <input
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Name"
-              />
-              <input
-                type="email"
-                name="email"
-                id="useremail"
-                placeholder="Email Address"
-              />
-              <input
-                type="text"
-                name="companyName"
-                id="companyName"
-                placeholder="Company Name"
-              />
-              <input
-                type="text"
-                name="userTitle"
-                id="userTitle"
-                placeholder="Title"
-              />
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Message"
-              ></textarea>
+            <form id="contactForm" action="" method="">
+              <div class="input-control">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Name"
+                />
+                <span class="error"></span>
+              </div>
+              <div class="input-control">
+                <input
+                  type="text"
+                  name="email"
+                  id="useremail"
+                  placeholder="Email Address"
+                />
+                <span class="error"></span>
+              </div>
+
+              <div class="input-control">
+                <input
+                  type="text"
+                  name="companyName"
+                  id="companyName"
+                  placeholder="Company Name"
+                />
+                <span class="error"></span>
+              </div>
+
+              <div class="input-control">
+                <input
+                  type="text"
+                  name="userTitle"
+                  id="userTitle"
+                  placeholder="Title"
+                />
+                <span class="error"></span>
+              </div>
+              <div class="input-control">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+                <span class="error"></span>
+              </div>
               <div class="checkbox-container">
                 <input
                   type="checkbox"
@@ -152,10 +175,22 @@
         <div class="footer-content">
           <div class="footer-content-left">
             <ul>
-              <img src="assets/img/logo-2.svg" alt="" />
-              <li><a class="link-nav link-nav-footer" href="/pricing.html">Pricing</a></li>
-              <li><a class="link-nav link-nav-footer" href="/about.html">About</a></li>
-              <li><a class="link-nav link-nav-footer" href="/contact.html">Contact</a></li>
+              <a class="link-nav" href="/index.html">
+                <img src="assets/img/logo-2.svg" alt="" />
+              </a>
+              <li>
+                <a class="link-nav link-nav-footer" href="/pricing.html"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a class="link-nav link-nav-footer" href="/about.html">About</a>
+              </li>
+              <li>
+                <a class="link-nav link-nav-footer" href="/contact.html"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
           <div class="footer-content-right">
@@ -188,5 +223,9 @@
         </div>
       </footer>
     </div>
+
+
+
+    <script src="/script.js"></script>
   </body>
 </html>
