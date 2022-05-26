@@ -9,7 +9,22 @@ const userMessage = document.querySelector("#message");
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  const formData = new FormData(contactForm);
+  let isValid = true;
+  const values = {};
+  for (let [key, value] of formData.entries()) {
+    values[key] = value;
+    if (value.trim() === "") {
+      isValid = false;
+      break;
+    }
+  }
+
   validateInputs();
+  if (isValid) {
+    contactForm.reset();
+  }
+  console.log(values);
 });
 
 const setError = (element, message) => {

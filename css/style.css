@@ -20,6 +20,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -52,29 +53,16 @@ header {
 }
 
 nav {
-  width: 50%;
+  width: 100%;
   height: 15%;
   top: 0;
   padding: 3rem 0;
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 99;
-}
-#brand-logo {
-  margin-right: 2rem;
-}
-
-.nav-left {
-  left: 0;
-  justify-content: flex-start;
-  padding-left: 10rem;
-}
-
-.nav-right {
-  right: 0;
-  justify-content: flex-end;
-  padding-right: 10rem;
+  padding: 0 10rem;
 }
 
 nav ul {
@@ -86,6 +74,13 @@ nav ul {
 
 nav ul li {
   list-style: none;
+}
+
+.link-nav {
+  text-decoration: none;
+  color: var(--san-juan-blue);
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .link-nav {
@@ -503,4 +498,10 @@ footer {
 
 .footer-content-right-content svg:hover path {
   fill: var(--dark-pink);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    grid-template-columns: repeat(1, 100%);
+  }
 }
