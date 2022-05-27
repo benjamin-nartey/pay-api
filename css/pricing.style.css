@@ -21,6 +21,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -357,4 +358,28 @@ footer {
 
 .footer-content-right-content svg:hover path {
   fill: var(--dark-pink);
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  nav {
+    padding: 0 5rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 5rem;
+    padding-top: 2rem;
+    background-color: var(--color-background);
+    transition: all 0.35s ease;
+  }
+
+  .heading-main {
+    text-align: center;
+  }
+
+  main {
+    padding: 15rem 5rem;
+  }
 }

@@ -512,21 +512,35 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  section {
+    padding: 0 5rem;
+  }
   header {
     display: flex;
     flex-direction: column-reverse;
+    height: 80vh;
   }
 
   .right-column {
-    height: 70rem;
+    height: 2rem;
   }
 
   .left-column {
-    height: 50rem;
+    height: 65rem;
   }
 
   nav {
     padding: 0 5rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 5rem;
+    padding-top: 2rem;
+    background-color: var(--color-background);
+    transition: all 0.35s ease;
   }
 
   #btn-pink--2 {
@@ -536,15 +550,235 @@ footer {
   .right-column::before {
     width: 120rem;
     height: 120rem;
-    top: -30%;
+    top: -62rem;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   #hero-phone-mockup {
-    top: 50%;
+    top: 35%;
     left: 55%;
-    width: 40rem;
+    width: 35rem;
     height: 60rem;
+  }
+
+  .header-main {
+    display: grid;
+    place-items: center;
+  }
+
+  .hero-text {
+    width: 60%;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.37px;
+  }
+
+  .about-us-section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10rem;
+  }
+  .sponsers-container {
+    padding-left: 0;
+  }
+
+  .about-us-section-left {
+    align-items: center;
+  }
+
+  .para-main-1 {
+    text-align: center;
+    width: 45rem;
+  }
+
+  .api-format-section {
+    display: flex;
+    flex-direction: column;
+  }
+  #api-format-img {
+    transform: translateX(3rem);
+  }
+
+  .about-us-section-left::before {
+    clip: rect(0, 120rem, 30rem, 0);
+    transform: rotate(180deg) translate(0%, 66%);
+    width: 120rem;
+    height: 120rem;
+  }
+
+  .ui-ux-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .api-format-section-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-mockup-box img:nth-child(1) {
+    margin-left: 12rem;
+  }
+
+  .ui-ux-section-right::before {
+    display: none;
+  }
+
+  .ui-ux-section-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-grid-container {
+    place-content: center;
+  }
+
+  .para-secondary {
+    width: 25rem;
+  }
+
+  .ready-to-start-container {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 3rem 5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  section {
+    padding: 0 5rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+
+  .right-column {
+    height: 2rem;
+  }
+
+  .left-column {
+    height: 65rem;
+  }
+
+  nav {
+    padding: 0 5rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 5rem;
+    padding-top: 2rem;
+    background-color: var(--color-background);
+    transition: all 0.35s ease;
+  }
+
+  #btn-pink--2 {
+    width: 17.3rem;
+  }
+
+  .right-column::before {
+    width: 120rem;
+    height: 120rem;
+    top: -62rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #hero-phone-mockup {
+    top: 35%;
+    left: 55%;
+    width: 35rem;
+    height: 60rem;
+  }
+
+  .header-main {
+    display: grid;
+    place-items: center;
+  }
+
+  .hero-text {
+    width: 88%;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.37px;
+  }
+
+  .about-us-section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10rem;
+  }
+  .sponsers-container {
+    padding-left: 0;
+  }
+
+  .about-us-section-left {
+    align-items: center;
+  }
+
+  .para-main-1 {
+    text-align: center;
+    width: 45rem;
+  }
+
+  .api-format-section {
+    display: flex;
+    flex-direction: column;
+  }
+  #api-format-img {
+    transform: translateX(3rem);
+  }
+
+  .about-us-section-left::before {
+    clip: rect(0, 120rem, 30rem, 0);
+    transform: rotate(180deg) translate(0%, 66%);
+    width: 120rem;
+    height: 120rem;
+  }
+
+  .ui-ux-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .api-format-section-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-mockup-box img:nth-child(1) {
+    margin-left: 4rem;
+  }
+
+  .ui-ux-section-right::before {
+    display: none;
+  }
+
+  .ui-ux-section-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-grid-container {
+    place-content: center;
+  }
+
+  .para-secondary {
+    width: 25rem;
+  }
+
+  .ready-to-start-container {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 3rem 5rem;
   }
 }
