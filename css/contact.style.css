@@ -21,6 +21,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -415,4 +416,49 @@ footer {
 
 .footer-content-right-content svg:hover path {
   fill: var(--dark-pink);
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .container::before {
+    transform: translate(85%, -63%);
+  }
+  nav {
+    padding: 0 5rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 5rem;
+    padding-top: 2rem;
+    background-color: var(--color-background);
+    transition: all 0.35s ease;
+  }
+
+  .heading-main-2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .contact-form-section-left {
+    display: grid;
+    place-content: center;
+  }
+
+  .contact-form-section-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .ready-to-start-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
 }

@@ -21,6 +21,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -330,4 +331,76 @@ footer {
 
 .footer-content-right-content svg:hover path {
   fill: var(--dark-pink);
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container::before {
+    transform: translate(85%, -63%);
+  }
+  nav {
+    padding: 0 5rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 5rem;
+    padding-top: 2rem;
+    background-color: var(--color-background);
+    transition: all 0.35s ease;
+  }
+
+  #hero-heading {
+    margin-left: 20%;
+    text-align: center;
+  }
+
+  .para-main {
+    width: 55rem;
+  }
+
+  .vision-container {
+    padding: 0 10rem;
+  }
+
+  .ready-to-start-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container::before {
+    transform: translate(55%, -63%);
+  }
+  nav {
+    padding: 0 5rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 5rem;
+    padding-top: 2rem;
+    background-color: var(--color-background);
+    transition: all 0.35s ease;
+  }
+
+  #hero-heading {
+    margin-left: 7%;
+    text-align: center;
+  }
+
+  .para-main {
+    width: 30rem;
+  }
+
+  .vision-container {
+    padding: 0 10rem;
+  }
+
+  .ready-to-start-container {
+    flex-direction: column;
+  }
 }

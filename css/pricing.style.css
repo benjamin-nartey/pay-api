@@ -360,7 +360,10 @@ footer {
   fill: var(--dark-pink);
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container::before {
+    transform: translate(85%, -63%);
+  }
   nav {
     padding: 0 5rem;
   }
@@ -381,5 +384,93 @@ footer {
 
   main {
     padding: 15rem 5rem;
+  }
+
+  .pricing-plan-container {
+    place-content: center;
+  }
+
+  .pricing-plan-column {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .plan-container-1 {
+    align-items: center;
+  }
+
+  .plan-container-2 {
+    padding: 2.4rem 10rem;
+  }
+
+  .para-main-1 {
+    width: 25rem;
+  }
+
+  .ready-to-start-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  footer {
+    padding: 3rem 5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container::before {
+    transform: translate(55%, -63%);
+  }
+  nav {
+    padding: 0 5rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 5rem;
+    padding-top: 2rem;
+    background-color: var(--color-background);
+    transition: all 0.35s ease;
+  }
+
+  .heading-main {
+    text-align: center;
+  }
+
+  main {
+    padding: 15rem 5rem;
+  }
+
+  .pricing-plan-container {
+    justify-content: center;
+    column-gap: 2rem;
+  }
+
+  .pricing-plan-column {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .plan-container-1 {
+    align-items: center;
+  }
+
+  .plan-container-2 {
+    padding: 2.4rem 10rem;
+  }
+
+  .para-main-1 {
+    width: 25rem;
+  }
+
+  .ready-to-start-container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  footer {
+    padding: 3rem 5rem;
   }
 }
