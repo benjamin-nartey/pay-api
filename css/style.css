@@ -920,11 +920,16 @@ footer {
     flex-direction: column-reverse;
     gap: 10rem;
   }
-  .sponsers-container {
-    padding-left: 2.5rem;
+  .about-us-section-right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 2rem;
+  }
+
+  .sponsers-container {
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: flex-start;
+    padding-left: 0;
   }
 
   .about-us-section-left {
