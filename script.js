@@ -15,3 +15,16 @@ function fixedOnScroll() {
     navbar.classList.remove("sticky");
   }
 }
+
+const menuToggle = document.querySelector("#menu");
+
+menuToggle.addEventListener("click", function () {
+  if (navbar.style.display !== "block") {
+    navbar.style.display = "block";
+    navbar.style.animation = "move-right";
+    navbar.style.animationDuration = ".35s";
+    navbar.style.animationTimingFunction = "ease-out";
+  } else {
+    navbar.style.display = "none";
+  }
+});
