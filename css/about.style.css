@@ -55,6 +55,10 @@ body {
   display: none;
 }
 
+picture img {
+  width: 100%;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -203,7 +207,7 @@ main {
   margin-bottom: 6rem;
 }
 
-#hero-img {
+.hero-img {
   display: block;
   width: 100%;
   height: 100%;
