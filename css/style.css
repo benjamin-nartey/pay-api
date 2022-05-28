@@ -808,6 +808,7 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     height: 100vh;
+    padding: 0 0;
   }
 
   .right-column {
@@ -873,7 +874,7 @@ footer {
 
   #hero-phone-mockup {
     top: 10rem;
-    left: 60%;
+    left: 55%;
     width: 25rem;
     height: 25rem;
   }
@@ -881,7 +882,7 @@ footer {
   .header-main {
     display: grid;
     place-items: center;
-    left: 0;
+    left: 50%;
     transform: translate(-50%, -50%);
   }
 

@@ -502,8 +502,9 @@ footer {
   }
 
   #hero-heading {
-    margin-left: 7%;
+    margin-left: 0;
     text-align: center;
+    width: 100%;
   }
 
   .heading-main {
