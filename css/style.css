@@ -47,7 +47,7 @@ body {
 }
 
 #mobile-logo {
-  position: absolute;
+  position: fixed;
   left: 3rem;
   top: 3rem;
   z-index: 99;
@@ -867,7 +867,7 @@ footer {
   .right-column::before {
     width: 100rem;
     height: 100rem;
-    top: -40rem;
+    top: -42rem;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -876,7 +876,7 @@ footer {
     top: 10rem;
     left: 55%;
     width: 25rem;
-    height: 25rem;
+    height: 35rem;
   }
 
   .header-main {

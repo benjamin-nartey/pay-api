@@ -48,7 +48,7 @@ body {
 }
 
 #mobile-logo {
-  position: absolute;
+  position: fixed;
   left: 3rem;
   top: 3rem;
   z-index: 99;
@@ -499,7 +499,7 @@ footer {
 
 @media (max-width: 480px) {
   .container::before {
-    transform: translate(55%, -63%);
+    transform: translate(12%, -79%);
   }
 
   nav {
